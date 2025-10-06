@@ -10,9 +10,9 @@ def tulis_huruf():
         with open(nama_file, "a") as file:  # "a" supaya terus menambahkan isi
             for huruf in string.ascii_lowercase:  # a-z
                 file.write(huruf + "\n")
-                file.flush()  # pastikan langsung tertulis ke file
-                print(f"Menulis huruf: {huruf}")  # feedback ke terminal
-                time.sleep(5)  # jeda 5 detik
+                file.flush()  # langsung tulis ke file
+                print(f"Menulis huruf: {huruf} (tunggu 1 menit...)")
+                time.sleep(60)  # jeda 1 menit per huruf
 
 if __name__ == "__main__":
     try:
